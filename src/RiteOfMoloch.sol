@@ -78,7 +78,7 @@ contract RiteOfMoloch is InitializationData, ERC721Upgradeable, AccessControlUpg
     CountersUpgradeable.Counter internal _tokenIdCounter;
 
     MolochDAO public dao;
-    Token private _token; /// @dev why private?
+    Token private _token; /// @dev why explicitly private?
 
     // cohort's base URI for accessing token metadata
     string internal __baseURI;

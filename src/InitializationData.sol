@@ -2,8 +2,9 @@
 // @author st4rgard3n, bitbeckers, MrDeadce11 / Raid Guild
 pragma solidity ^0.8.4;
 
+/// @dev why contract? @todo
 contract InitializationData {
-
+    /// @todo correct natspec
     // object is used to initialize new cohorts
     // daoAddress_ the contract address read from in order to ascertain cohort completion
     // tokenAddress_ the contract address for the asset which is staked into the cohort contract
