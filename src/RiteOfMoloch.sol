@@ -2,9 +2,9 @@
 // @author st4rgard3n, bitbeckers, MrDeadce11 / Raid Guild
 pragma solidity ^0.8.4;
 
-import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol";
+import "openzeppelin-contracts-upgradeable/contracts/access/AccessControlUpgradeable.sol";
+import "openzeppelin-contracts-upgradeable/contracts/utils/CountersUpgradeable.sol";
+import "openzeppelin-contracts-upgradeable/contracts/token/ERC721/ERC721Upgradeable.sol";
 import "./InitializationData.sol";
 
 interface MolochDAO {
@@ -78,7 +78,7 @@ contract RiteOfMoloch is InitializationData, ERC721Upgradeable, AccessControlUpg
     CountersUpgradeable.Counter internal _tokenIdCounter;
 
     MolochDAO public dao;
-    Token private _token;
+    Token private _token; /// @dev why private?
 
     // cohort's base URI for accessing token metadata
     string internal __baseURI;
